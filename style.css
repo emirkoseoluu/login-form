@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    display: grid;
+    place-items: center;
+   
+}
+
+.container{
+    width: 365px;
+    height: 545px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px;
+    
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.title::before{
+    content: "";
+    position: absolute;
+    background: rgb(45, 167, 238);
+    height: 3px;
+    width: 10%;
+    bottom: 0;
+    border-radius: 10px;
+
+}
+
+.image{
+    position: relative;
+}
+
+
+.image img{
+    height: 6rem;
+    position: absolute;
+    right: 0;
+    top: -1.6rem;
+}
+
+
+
+.inputbox{
+    height: 45px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.inputbox input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1.03rem;
+    
+}
+
+.forgot-password{
+    text-decoration: none;
+    opacity: .9;
+    color: rgb(0, 54, 140);
+    
+}
+
+
+.under-line{
+    position: absolute;
+    height: 2.1px;
+    width: 100%;
+    background-color: #aaa4a4;
+    border-radius: ;
+    
+}
+
+.under-line::after{
+    content: "";
+    position: absolute;
+    height: 2.1px;
+    width: 100%;
+    background: red;
+    transform-origin: left;
+    transition: 0.4s;
+    transform: scaleX(0);
+}
+
+.inputbox input:focus ~ .under-line::after{
+    transform: scaleX(1);
+}
+
+
+.inputbox input[type="submit"]{
+    background-color: red;
+    border-radius: 1.4rem;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: .7rem;
+    
+
+}
+
+
+
+.inputbox input[type="submit"]:hover{
+    background-color: rgb(39, 183, 39);
+    letter-spacing: 1px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.container .github a,
+.container .twitter a,
+.container .facebook a{
+    display: block;
+    line-height: 45px;
+    text-decoration: none;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 1.04rem;
+
+
+
+
+
+}
+
+.container .github {
+    background: #24292e;
+    margin: 40px 0 0;
+    border-radius: 10px;
+    padding-top: ;
+}
+
+.container .twitter{
+    background: #1da1f2;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.container .facebook {
+    background: #3b5998;
+    border-radius: 10px;
+}
+
+.container .twitter i,
+.container .facebook i, 
+.container .github i{
+
+    margin-right: 5.6px;
+}
+
+
+.container .github:hover{
+
+    background-color: rgba(51, 55, 51, 0.503);
+}
+
+.container .facebook:hover{
+    background-color: rgba(70, 117, 212, 0.503);
+}
+
+.container .twitter:hover{
+    background-color: #2391d692;
